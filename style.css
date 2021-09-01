@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+header {
+  height: 10rem;
+  background-color: #5ba4a4;
+  background-image: url("./images/bg-header-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 5rem;
+}
+
+header .box {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transform: translateY(8rem);
+          transform: translateY(8rem);
+  background-color: white;
+  border-radius: 0.2rem;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .box .clear {
+  padding-right: 1rem;
+}
+
+header .box .clear:hover {
+  color: #5ba4a4;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header .box .btn_grid {
+  padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.data_btn {
+  overflow: hidden;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+  background-color: #deeded;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.1rem;
+  color: #5ba4a4;
+  font-weight: bold;
+  font-size: 0.64rem;
+}
+
+.data_btn .name {
+  padding: 0.5rem;
+}
+
+.data_btn .img {
+  background-image: url("./images//icon-remove.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #5ba4a4;
+  height: 1.8rem;
+  aspect-ratio: 1 / 1;
+  display: block;
+}
+
+.data_btn .img:hover {
+  cursor: pointer;
+  background-color: #2c3a3a;
+}
+
+body {
+  background-color: #effafa;
+  padding-bottom: 2rem;
+}
+
+.offer {
+  background-color: white;
+}
+
+.offer img {
+  width: 3rem;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.offer {
+  padding: 1rem;
+  padding-top: 2rem;
+  border-radius: 0.2rem;
+  position: relative;
+}
+
+.offer img {
+  position: absolute;
+  top: -0.5rem;
+  left: 3rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.offer p {
+  padding-block: 0.5rem;
+}
+
+.offer .grid {
+  border-top: 1px solid #b2bdbd;
+  padding-top: 1rem;
+}
+
+.p1 {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.p1 .job_name {
+  padding-right: 1rem;
+  color: #5ba4a4;
+}
+
+.p1 .new,
+.p1 .featured {
+  color: white;
+  background-color: #5ba4a4;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.p1 .featured {
+  background-color: black;
+  margin-left: 0.3rem;
+}
+
+.job_desc {
+  font-weight: bold;
+}
+
+.others {
+  color: #7b8e8e;
+  font-size: 0.64rem;
+}
+
+.border {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #5ba4a4;
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+
+.clear {
+  font-size: 0.8rem;
+  color: #2c3a3a;
+}
+
+.box,
+.offer {
+  -webkit-box-shadow: 1px 1rem 10px rgba(91, 164, 164, 0.192);
+          box-shadow: 1px 1rem 10px rgba(91, 164, 164, 0.192);
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  gap: 3rem;
+}
+
+.box {
+  display: none;
+}
+
+main .data_btn:hover {
+  cursor: pointer;
+  background-color: #5ba4a4;
+  color: white;
+}
+
+@media (min-width: 1440px) {
+  main,
+  header .box {
+    width: 80%;
+  }
+  main .offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
+  main .offer img {
+    position: initial;
+    top: unset;
+    left: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    width: unset;
+    height: 5rem;
+    margin-left: 1rem;
+  }
+  main .offer .grid {
+    margin-left: auto;
+    padding-top: 0;
+    border: unset;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+$Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+
+$Light-Grayish-Cyan-Background: hsl(180, 52%, 96%);
+$Light-Grayish-Cyan-Filter-Tablets: hsl(180, 31%, 95%);
+$Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+$Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+
+header {
+  height: 10rem;
+  background-color: $Desaturated-Dark-Cyan;
+  background-image: url("./images/bg-header-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 5rem;
+
+  .box {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(8rem);
+    background-color: white;
+    border-radius: 0.2rem;
+    display: none;
+    align-items: center;
+    .clear {
+      padding-right: 1rem;
+
+      &:hover {
+        color: $Desaturated-Dark-Cyan;
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+
+    .btn_grid {
+      padding: 1rem;
+      flex-grow: 1;
+      display: flex;
+      gap: 0.7rem;
+    }
+  }
+}
+
+.data_btn {
+  .name {
+    padding: 0.5rem;
+  }
+
+  overflow: hidden;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+  background-color: lighten($color: $Desaturated-Dark-Cyan, $amount: 40%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.1rem;
+  color: $Desaturated-Dark-Cyan;
+  font-weight: bold;
+  font-size: 0.64rem;
+  .img {
+    background-image: url("./images//icon-remove.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $Desaturated-Dark-Cyan;
+    height: 1.8rem;
+    aspect-ratio: 1 / 1;
+    display: block;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $Very-Dark-Grayish-Cyan;
+    }
+  }
+}
+
+body {
+  background-color: $Light-Grayish-Cyan-Background;
+  padding-bottom: 2rem;
+}
+
+.offer {
+  background-color: white;
+
+  img {
+    width: 3rem;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.offer {
+  padding: 1rem;
+  padding-top: 2rem;
+  border-radius: 0.2rem;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: -0.5rem;
+    left: 3rem;
+    transform: translate(-50%, -50%);
+  }
+  p {
+    padding-block: 0.5rem;
+  }
+  .grid {
+    border-top: 1px solid lighten($color: $Dark-Grayish-Cyan, $amount: 20%);
+    padding-top: 1rem;
+  }
+}
+
+.p1 {
+  font-size: 0.8rem;
+  font-weight: bold;
+
+  .job_name {
+    padding-right: 1rem;
+    color: $Desaturated-Dark-Cyan;
+  }
+
+  .new,
+  .featured {
+    color: white;
+    background-color: $Desaturated-Dark-Cyan;
+    padding: 0.3rem 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .featured {
+    background-color: black;
+    margin-left: 0.3rem;
+  }
+}
+
+.job_desc {
+  font-weight: bold;
+}
+
+.others {
+  color: $Dark-Grayish-Cyan;
+  font-size: 0.64rem;
+}
+
+.border {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: $Desaturated-Dark-Cyan;
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+
+.clear {
+  font-size: 0.8rem;
+  color: $Very-Dark-Grayish-Cyan;
+}
+
+.box,
+.offer {
+  box-shadow: 1px 1rem 10px hsla(180, 29%, 50%, 0.192);
+}
+
+main {
+  display: grid;
+  gap: 3rem;
+}
+
+.box {
+  display: none;
+}
+main .data_btn:hover {
+  cursor: pointer;
+  background-color: $Desaturated-Dark-Cyan;
+  color: white;
+}
+@media (min-width: 1440px) {
+  main,
+  header .box {
+    width: 80%;
+  }
+
+  main .offer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    img {
+      position: initial;
+      top: unset;
+      left: unset;
+      transform: unset;
+      width: unset;
+      height: 5rem;
+      margin-left: 1rem;
+    }
+    .grid {
+      margin-left: auto;
+      padding-top: 0;
+      border: unset;
+    }
+  }
+}
